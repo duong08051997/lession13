@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>ứng dụng vui</title>
 </head>
 <body>
-$END$
+<div style="text-align: center;">
+    <h1> viết vào đây những gì bạn muốn</h1>
+    <h1>ANH YÊU EM</h1>
+    <form name="f">
+        <label>
+            <textarea name="txt" cols="50" rows="20" onkeydown="typeText()"></textarea>
+        </label>
+    </form>
+</div>
 </body>
+<script>
+    let a = [];
+    a[1]= 'E';a[2]= 'M';a[3]= ' ';a[4]= 'C';a[5]= 'Ũ';a[6]= 'N';a[7]= 'G';a[8]= ' ';a[9]= 'Y';
+    a[10]= 'Ê';a[11]= 'U';a[12]= ' ';a[13]= 'A';a[14]= 'N';a[15]= 'H';a[16]= ' ';a[17]= '<';
+    a[18]= '3';a[19]= ' ';a[20]= '<';a[21]= '3';a[22]= ' ';a[23]= '<';a[24]= '3 ';
+    let n = '';
+
+    function typeText() {
+       let t = document.f.txt.value;
+        j = t.length;
+        if (j > 0) {
+            for (let i = 1; i <= j; i++) {
+                n = n + a[i];
+                if (i === 25) {
+                    document.f.txt.value = '';
+                    n = '';
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n = '';
+        setTimeout('typeText()', 1);
+    }
+
+</script>
 </html>
