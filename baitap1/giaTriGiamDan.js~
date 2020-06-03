@@ -1,0 +1,6 @@
+let a = [1,2,4,7,8,9,23,-34,-3,-12]
+//a.sort(function (b,c) {return c-b})
+
+    }
+
+}

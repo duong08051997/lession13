@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp ngược chiều</title>
+</head>
+<body>
+<script>
+   // let num = [];
+    let sum = [];
+    for (let i = 0; i <  5; i++) {
+        num = prompt('nhập vào 5 kí tự từ bàn phím');
+        sum += num + ',';
+
+    }
+    document.write(`cac so ban vua nhap la ${sum} <br>`);
+    let lum =[];
+   for (let i = sum.length-1 ; i >= 0; i--) {
+       lum += sum[i];
+   }
+
+    document.write(lum);
+</script>
+</body>
+</html>
